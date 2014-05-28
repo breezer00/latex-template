@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\linespread{1.2}
+% Graphics package
+\usepackage{tikz}
+
+% AMS collection, math symbols, theroms
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+% Handle crossreferencing commands in LATEX to produce hypertext links in the document. 
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+% One-stage setting of page styles (headlines and footlines) 
+\usepackage{titleps}
+
+% Adds an optional argument to enumerate enviroment which determines the style of the counter.
+\usepackage{enumerate}
+
+% Reimplements the LATEX verbatim and verbatim* environments
+\usepackage{verbatim}
+
+% Listing source code
+\usepackage{listings}
+
+\setlength{\parindent}{0pt} %no indentation anywhere
+\makeatletter
+\renewcommand\@seccntformat[1]{}
+\makeatother
+
+\newpagestyle{problem1}
+{\sethead{}{Name \\ SUID:  \\ SUNet ID:  \\ Problem 1}
+  {}\headrule}
+
+\begin{document}
+    
+\title{}
+\date{\today}
+\author{Name}
+\maketitle
+
+\newpage
+\pagestyle{problem1}
+
+\end{document}
+
